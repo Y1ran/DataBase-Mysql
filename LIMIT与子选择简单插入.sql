@@ -1,12 +1,16 @@
-复习：
+完整插入语句如下：
+
+INSERT INTO table_names
 SELECT [All|Distinct] <expr of columns> [as 别名] ...
 From <表名> [as 别名]... | (<select 派生表>[As] <别名>
-[Where + 条件表达式（包括：比较，IN,EXISTS,AND,LIKE等)
-[Group by <列名> [Having<Expr>]] *所选列必须在Group或聚集中
-[Order by <列名> [ASC|DESC]
+Where + 条件表达式（包括：比较，IN,EXISTS,AND,LIKE等)
+Group by <列名> [Having<Expr>]] *所选列必须在Group或聚集中
+Order by <列名> [ASC|DESC]
+LIMIT n, m;
 
-以下语句由于MYSQL重装，因此重新创建数据库；
-
+*****************************************
+以下语句由于MYSQL重装，因此重新创建数据库
+*****************************************
 create database students;
 use students;
 
